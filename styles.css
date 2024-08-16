@@ -1,0 +1,498 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  flex: 2;
+  width: 90%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.author {
+  flex: 1;
+}
+.quote-container hr {
+  flex: 0.1;
+}
+
+.quote {
+  flex: 5;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* char box css */
+
+.charbox {
+  width: 3%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 2px;
+}
+hr {
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+.actual,
+.crypto {
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 0;
+  margin: 5px;
+}
+
+.crypto {
+  font-size: 0.8rem;
+}
+
+.author {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 20px;
+}
+
+.author span {
+  font-weight: bold;
+}
+
+.activeBox {
+  background: yellow;
+}
+
+/* Keyboard style section */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(49, 50, 4);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 25vh;
+  width: 100vw;
+  background-color: rgb(42, 37, 102);
+  border-radius: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.last {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.space {
+  background: rgb(171, 171, 2);
+  width: 50%;
+  height: 1rem;
+}
+
+.key {
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
+  .quote-container {
+    width: 100%;
+  }
+  .keyboard-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(42, 37, 102);
+  }
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 25vh;
+    width: 30vw;
+    background-color: rgb(42, 37, 102);
+    border-radius: 0.5rem;
+  }
+  .key {
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+}
+
+.key:active {
+  background: rgb(171, 171, 2);
+}
+
+.active {
+  /* background-color: #a6f513; */
+  border: 1px solid red;
+}
+
+.delete {
+  margin: 20px 10px;
+}
+
+/* Popup styling */
+
+.popup {
+  display: none;
+  width: 40%;
+  height: 50%;
+  background: rgb(42, 37, 102);
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.popup h1,
+.popup h3 {
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+}
+
+.popup p {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: monospace;
+  margin-top: -10px;
+}
+
+.popAuth {
+  font-family: monospace;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.popQuote {
+  width: 90%;
+  padding: 2rem;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.cancel,
+.restart {
+  width: 7rem;
+  aspect-ratio: 2;
+  border-radius: 20px;
+  background: #fff;
+  color: rgb(42, 37, 102);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-height: 1000px) {
+  .quote {
+    margin-bottom: 20px;
+  }
+  .popup {
+    display: none;
+    width: 40%;
+    height: 50%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1,
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: -10px;
+    font-size: 1rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-height: 820px) {
+  .popup {
+    display: none;
+
+    width: 40%;
+    height: 50%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1,
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: -10px;
+    font-size: 1rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .popup {
+    display: none;
+
+    width: 70%;
+    height: 40%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1,
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: -10px;
+    font-size: 1.4rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .popup {
+    display: none;
+
+    width: 90%;
+    height: 40%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.3rem;
+    padding-top: 3rem;
+  }
+
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: -10px;
+    font-size: 1rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem 1rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup {
+    display: none;
+
+    width: 90%;
+    height: 60%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1,
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2rem;
+  }
+
+  .popup h3 {
+    font-size: 1.5rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: -10px;
+    font-size: 1rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem 1rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+}

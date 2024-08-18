@@ -18,12 +18,16 @@
       <div class="quote-container">
         <div class="nav">
           <div class="author"></div>
-          <div class="hint">
+          <div class="hint" title="Hint">
             <i class="fa-regular fa-lightbulb"></i>
+            <span class="hinttooltip">10 hints</span>
           </div>
         </div>
         <hr />
         <div class="quote"></div>
+        <div class="timer">
+          <span class="time">5:00</span>
+        </div>
       </div>
       <div class="keyboard-container">
         <div class="keyboard">
@@ -109,7 +113,12 @@
       </div>
       <div class="popup">
         <h1>Congratulations!</h1>
-        <p class="secondtext">You got it!</p>
+        <p class="secondtext">
+          You got it with time to spare! <br /><br /><span
+            class="timeDis"
+          ></span>
+        </p>
+        <br /><br /><br />
         <h3>Author: <span class="popAuth">F. Scott Fitzgerald</span></h3>
         <p class="popQuote">
           The test of a first-rate intelligence is the ability to hold two

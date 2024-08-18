@@ -76,6 +76,7 @@ function attachKeyboardListener(){
             if(currentID != -1){
                 var ch = event.target.id.toUpperCase();
                 updateplayingQ(currentID, ch);
+                hintedIndices.push(currentID);
                 updateBoxes();
                 if(checkGame()){
                     // alert("You got it! \n The quote is: \n" + currentQuote + "\n Author: " + currentAuthor);
@@ -114,6 +115,8 @@ var currentQuote;
 var currentAuthor;
 var currentID = -1;
 var hints = 10;
+var timeToSet = 300000;
+var timer, timeIntervaler;
 
 var encryptor = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -145,6 +148,31 @@ function startGame(){
     for(var i = 0; i < currentCharQuote.length; i++){
         addBox(i, currentCharQuote[i], encryptChar(currentCharQuote[i]));
     }
+    startTimer();
+}
+
+function startTimer(){
+    timer = setTimeout(()=>{
+        showWinPopup2('Time\'s up!', 'Yor run out of time. Better luck next time!')
+        clearInterval(timeIntervaler);
+        clearTimeout(timer);
+    }, timeToSet);
+
+    timeIntervaler = setInterval(()=>{
+        timeToSet -= 1000;
+        let min =  Math.floor(timeToSet/1000/60);
+        let sec = Math.floor(timeToSet/1000) % 60;
+
+        let timeD = document.querySelector('.time')
+
+        if(sec < 10){
+            timeD.innerHTML = min + ":0" + sec
+        }
+        else{
+            timeD.innerHTML = min + ":" + sec
+        }
+
+    },1000);
 }
 
 function checkGame(){
@@ -176,14 +204,25 @@ function checkGame(){
 function showWinPopup(){
     var popup = document.querySelector('.popup');
     popup.style.display = 'block';
+    
+    let min =  Math.floor(timeToSet/1000/60);
+    let sec = Math.floor(timeToSet/1000) % 60;
+    sec = sec > 10 ? sec : '0' + sec;
+
+    var sectext = document.querySelector('.timeDis');   
+    sectext.innerHTML = min + ':' + sec;
+
+
 
     var authorpop = document.querySelector('.popAuth');
     var quotepop = document.querySelector('.popQuote');
     authorpop.innerHTML = currentAuthor;
     quotepop.innerHTML = currentQuote;
+    clearInterval(timeIntervaler);
+        clearTimeout(timer);
 }
 
-function showWinPopup2(){
+function showWinPopup2(text1, text2){
     var popup = document.querySelector('.popup');
     popup.style.display = 'block';
 
@@ -194,8 +233,8 @@ function showWinPopup2(){
     var cancelPopup = document.querySelector('.cancel');
     cancelPopup.style.display = 'none';
 
-    maintext.innerHTML= 'Failed!'
-    secondtext.innerHTML= 'Better luck next time!';
+    maintext.innerHTML= text1;
+    secondtext.innerHTML= text2;
     authorpop.innerHTML = currentAuthor;
     quotepop.innerHTML = currentQuote;
     console.log(currentQuote)
@@ -233,7 +272,7 @@ function addBox(i, c,crypto){
     var exceptions = [' ', ',','.',';',':','’','\''];
 
     if(exceptions.includes(c)){
-        let box = `<div class="charbox inactive"  id='${i}' ><p class="actual" id='${i}'>${c}</p></div>`
+        let box = `<div class="charbox inactive"  id='${i}' ><p class="actual" id='${i}'>${c}</p><p class="crypto" id='${i}'> </p></div>`
         quotesContainer.innerHTML += box;
     }
     else{
@@ -249,11 +288,11 @@ function updateBoxes(){
 
     for(var i = 0; i < currentCharQuote.length; i++){
         if(exceptions.includes(currentCharQuote[i])){
-            box = `<div class="charbox inactive"  id='${i}' ><p class="actual" id='${i}'>${currentCharQuote[i]}</p></div>`
+            box = `<div class="charbox inactive"  id='${i}' ><p class="actual" id='${i}'>${currentCharQuote[i]}</p><p class="crypto" id='${i}'> </p></div>`
         }
         else{
         if(playingQuote[i] == 0){
-            box = `<div class="charbox" id='${i}' ><p class="actual" id='${i}'></p><hr id='${i}'/><p class="crypto" id='${i}'>${encryptChar(currentCharQuote[i])}</p></div>`;
+            box = `<div class="charbox" id='${i}' ><p class="actual" id='${i}'> </p><hr id='${i}'/><p class="crypto" id='${i}'>${encryptChar(currentCharQuote[i])}</p></div>`;
         }
         else if(playingQuote[i] != 0){
                 box = `<div class="charbox" id='${i}' ><p class="actual" id='${i}'>${playingQuote[i]}</p><hr id='${i}'/><p class="crypto" id='${i}'>${encryptChar(currentCharQuote[i])}</p></div>`;
@@ -335,6 +374,7 @@ document.addEventListener('keyup', (e)=>{
         var ch = e.key.toUpperCase();
         console.log(ch,currentID);
         updateplayingQ(currentID, ch);
+        hintedIndices.push(currentID);
         updateBoxes();
         if(checkGame()){
             //alert("You got it! \n The quote is: \n" + currentQuote + "\n Author: " + currentAuthor);
@@ -374,6 +414,7 @@ let cancelPopup = document.querySelector('.cancel');
 
 //hint section
     var hint = document.querySelector('.hint');
+    var hintTio = document.querySelector(".hinttooltip");
     hint.addEventListener('click', ()=>{
         if(hints > 0){
             var answer = confirm("You have " + hints +" hints left. Do you want to use one to reveal a letter from the puzzle?");
@@ -388,12 +429,13 @@ let cancelPopup = document.querySelector('.cancel');
                 updateBoxes();
                 attachListeners();
                 clearAllBoxHighlights();
+                hintTio.innerHTML = hints +  " hints"
             }
         }
         else{
             var answer = confirm("You have no more hints available. Give up?");
             if(answer){
-                showWinPopup2();
+                showWinPopup2('Failed!', 'Better luck next time!');
             }
         }
         
@@ -419,3 +461,14 @@ function selectRandomForHint(){
 
         return random;
 }
+
+var hintIm = document.querySelector('.hint i');
+var hintTio = document.querySelector(".hinttooltip");
+hint.addEventListener('mouseover',()=>{
+    hintIm.style.display = 'none';
+    hintTio.style.display = 'block';
+})
+hint.addEventListener('mouseout',()=>{
+    hintIm.style.display = 'block';
+    hintTio.style.display = 'none';
+})

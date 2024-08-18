@@ -31,22 +31,26 @@ body {
   flex: 1;
 }
 .hint {
-  height: 1rem;
+  height: 1.2rem;
   aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 2rem;
   border-radius: 50%;
   padding: 20px;
   border: 1px solid black;
   background: yellow;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hint:hover {
   background: #fff;
 }
+
 .hint span {
   font-size: 1rem;
   padding-top: 10px;
@@ -57,7 +61,7 @@ body {
 }
 
 .quote {
-  flex: 5;
+  flex: 3;
   width: 98%;
   display: flex;
   flex-wrap: wrap;
@@ -65,12 +69,25 @@ body {
   align-items: center;
 }
 
-.keyboard-container {
+.timer {
   flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.time {
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+
+.keyboard-container {
+  flex: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 /* char box css */
@@ -419,6 +436,10 @@ body {
     font-weight: 100;
     text-align: justify;
   }
+  .keyboard-container {
+    flex: 1;
+    background: rgb(42, 37, 102);
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -524,4 +545,11 @@ body {
     font-weight: 100;
     text-align: justify;
   }
+}
+
+.hinttooltip {
+  display: none;
+  font-size: 1rem;
+  color: rgb(42, 37, 102);
+  font-weight: 500;
 }

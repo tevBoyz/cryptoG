@@ -1,10 +1,6 @@
 var quotes = {
     "Franklin D. Roosevelt": "The only thing we have to fear is fear itself.",
-    "Robert Frost": "In three words I can sum up everything I've learned about life: it goes on.",
     "Mahatma Gandhi": "Be the change that you wish to see in the world.",
-    "Winston Churchill": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "Martin Luther King Jr.": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
-    "Ralph Waldo Emerson": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
     "Peter Drucker": "The best way to predict the future is to create it.",
     "René Descartes": "I think, therefore I am.",
     "George Eliot": "It is never too late to be what you might have been.",
@@ -12,86 +8,66 @@ var quotes = {
     "Oscar Wilde": "Be yourself; everyone else is already taken.",
     "Mark Twain": "The secret of getting ahead is getting started.",
     "Nelson Mandela": "It always seems impossible until it’s done.",
-    "Henry David Thoreau": "Go confidently in the direction of your dreams! Live the life you've imagined.",
-    "Mother Teresa": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
-    "Aristotle": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
     "Friedrich Nietzsche": "He who has a why to live can bear almost any how.",
     "Confucius": "It does not matter how slowly you go as long as you do not stop.",
     "Eleanor Roosevelt": "No one can make you feel inferior without your consent.",
-    "Steve Jobs": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
-    "William Shakespeare": "All the world's a stage, and all the men and women merely players.",
-    "Helen Keller": "The only thing worse than being blind is having sight but no vision.",
-    "John F. Kennedy": "Ask not what your country can do for you; ask what you can do for your country.",
     "Buddha": "The mind is everything. What you think you become.",
-    "Maya Angelou": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
     "Benjamin Franklin": "An investment in knowledge pays the best interest.",
-    "Charles Darwin": "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.",
     "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
-    "Confucius": "Our greatest glory is not in never falling, but in rising every time we fall.",
     "C.S. Lewis": "You are never too old to set another goal or to dream a new dream.",
     "Isaac Newton": "If I have seen further it is by standing on the shoulders of giants.",
     "Vince Lombardi": "The only place where success comes before work is in the dictionary.",
     "Henry Ford": "Whether you think you can or you think you can’t, you’re right.",
-    "Albert Camus": "In the depth of winter, I finally learned that within me there lay an invincible summer.",
-    "Pablo Picasso": "Every child is an artist. The problem is how to remain an artist once we grow up.",
-    "J.K. Rowling": "It is our choices, that show what we truly are, far more than our abilities.",
-    "Anne Frank": "How wonderful it is that nobody need wait a single moment before starting to improve the world.",
     "Walt Disney": "The way to get started is to quit talking and begin doing.",
-    "Voltaire": "I disapprove of what you say, but I will defend to the death your right to say it.",
     "John Lennon": "Life is what happens when you're busy making other plans.",
-    "Marie Curie": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
-    "Ralph Waldo Emerson": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
     "Henry David Thoreau": "The price of anything is the amount of life you exchange for it.",
     "Jane Austen": "There is no charm equal to tenderness of heart.",
-    "George Bernard Shaw": "Life isn't about finding yourself. Life is about creating yourself.",
     "Theodore Roosevelt": "Do what you can, with what you have, where you are.",
     "Marcus Aurelius": "The happiness of your life depends upon the quality of your thoughts.",
-    "Mahatma Gandhi": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
     "Oprah Winfrey": "The biggest adventure you can take is to live the life of your dreams.",
-    "F. Scott Fitzgerald": "The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function.",
-    "Albert Einstein": "Try not to become a man of success, but rather try to become a man of value.",
     "George Washington": "It is better to be alone than in bad company.",
     "Thomas Jefferson": "Honesty is the first chapter in the book of wisdom.",
-    "Blaise Pascal": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
-    "Plato": "Wise men speak because they have something to say; fools because they have to say something.",
-    "H.L. Mencken": "For every complex problem, there is an answer that is clear, simple, and wrong.",
     "Vincent Van Gogh": "I dream my painting and I paint my dream.",
     "Ayn Rand": "The question isn't who is going to let me; it's who is going to stop me.",
     "Immanuel Kant": "Science is organized knowledge. Wisdom is organized life.",
-    "Nelson Mandela": "Education is the most powerful weapon which you can use to change the world.",
     "Stephen Hawking": "Intelligence is the ability to adapt to change.",
     "Leonardo da Vinci": "Learning never exhausts the mind.",
     "Socrates": "The only true wisdom is in knowing you know nothing.",
     "Abraham Lincoln": "Whatever you are, be a good one.",
-    "Albert Schweitzer": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
-    "Isaac Asimov": "The saddest aspect of life right now is that science gathers knowledge faster than society gathers wisdom.",
     "Martin Luther King Jr.": "The time is always right to do what is right.",
-    "Maya Angelou": "If you don't like something, change it. If you can't change it, change your attitude.",
     "Eleanor Roosevelt": "Do one thing every day that scares you.",
     "Helen Keller": "Alone we can do so little; together we can do so much.",
-    "Buddha": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
-    "William James": "The greatest discovery of any generation is that a human being can alter his life by altering his attitude.",
     "Steve Jobs": "Innovation distinguishes between a leader and a follower.",
     "Ernest Hemingway": "Courage is grace under pressure.",
-    "Victor Hugo": "Music expresses that which cannot be said and on which it is impossible to be silent.",
     "Stephen King": "Get busy living or get busy dying.",
     "Socrates": "An unexamined life is not worth living.",
     "George Orwell": "In a time of deceit telling the truth is a revolutionary act.",
-    "Marilyn Monroe": "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.",
     "Friedrich Nietzsche": "That which does not kill us makes us stronger.",
-    "Sigmund Freud": "Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways.",
     "Thomas Jefferson": "I cannot live without books.",
-    "Dalai Lama": "Happiness is not something ready made. It comes from your own actions.",
     "Confucius": "Wherever you go, go with all your heart.",
     "Winston Churchill": "If you're going through hell, keep going.",
     "Lao Tzu": "The journey of a thousand miles begins with one step.",
-    "Benjamin Franklin": "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
-    "Mark Twain": "The two most important days in your life are the day you are born and the day you find out why.",
-    "Oscar Wilde": "To live is the rarest thing in the world. Most people exist, that is all."
+    "Albert Einstein": "Imagination is more important than knowledge.",
+    "Mahatma Gandhi": "Be the change you wish to see in the world.",
+    "Walt Disney": "If you can dream it, you can do it.",
+    "Oscar Wilde": "Be yourself; everyone else is already taken.",
+    "Abraham Lincoln": "Whatever you are, be a good one.",
+    "Helen Keller": "Life is either a daring adventure or nothing.",
+    "Socrates": "The unexamined life is not worth living.",
+    "Confucius": "It does not matter how slowly you go, as long as you do not stop.",
+    "Yoda": "Do, or do not. There is no try.",
+    "Ralph Waldo Emerson": "The only way to have a friend is to be one.",
+    "Benjamin Franklin": "Well done is better than well said.",
+    "Maya Angelou": "Try to be a rainbow in someone's cloud.",
+    "Dr. Seuss": "Don't cry because it's over, smile because it happened.",
+    "Mark Twain": "The secret of getting ahead is getting started.",
+    "Mother Teresa": "Spread love everywhere you go.",
+    "William Shakespeare": "Brevity is the soul of wit.",
+    "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
+    "John Lennon": "Life is what happens when you're busy making other plans.",
+    "Friedrich Nietzsche": "That which does not kill us makes us stronger.",
+    "Buddha": "Peace comes from within. Do not seek it without."
 }
-
-
-
 
 function attachKeyboardListener(){
     let allKey = document.querySelectorAll(".key");
@@ -115,7 +91,6 @@ function attachKeyboardListener(){
     });
 }
 
-
 function attachDeleteKeyboardListener(){
     let deleteKey = document.querySelector(".delete");
         deleteKey.addEventListener("click", function(event){
@@ -130,21 +105,21 @@ function attachDeleteKeyboardListener(){
 }
 
 //Game code
-
 var quotesContainer = document.querySelector('.quote');
 var authorContainer = document.querySelector('.author');
 let key = '';
 
+var playingQuote;
+var currentQuote;
+var currentAuthor;
+var currentID = -1;
+var hints = 10;
+
 var encryptor = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
+var hintedIndices=[];
 var currentCharQuote = [];
-var playingQuote;
-
-var currentQuote;
-var currentAuthor;
-
-var currentID = -1;
 
 function getQuote(){
     let keys = Object.keys(quotes);
@@ -153,7 +128,7 @@ function getQuote(){
 }
 
 function startGame(){
-    var currentQuote = getQuote().toUpperCase();
+    currentQuote = getQuote().toUpperCase();
     //  currentQuote = "Simplicity is the ultimate sophistication.";
     //  currentQuote = currentQuote.toUpperCase()
     currentAuthor = key;
@@ -165,7 +140,7 @@ function startGame(){
     currentCharQuote = currentQuote.split('');
     playingQuote = Array(currentCharQuote.length).fill(0);
 
-    console.log(currentCharQuote, playingQuote)
+    console.log(currentQuote)
 
     for(var i = 0; i < currentCharQuote.length; i++){
         addBox(i, currentCharQuote[i], encryptChar(currentCharQuote[i]));
@@ -208,6 +183,24 @@ function showWinPopup(){
     quotepop.innerHTML = currentQuote;
 }
 
+function showWinPopup2(){
+    var popup = document.querySelector('.popup');
+    popup.style.display = 'block';
+
+    var maintext = document.querySelector('.popup h1');
+    var secondtext= document.querySelector('.secondtext');
+    var authorpop = document.querySelector('.popAuth');
+    var quotepop = document.querySelector('.popQuote');
+    var cancelPopup = document.querySelector('.cancel');
+    cancelPopup.style.display = 'none';
+
+    maintext.innerHTML= 'Failed!'
+    secondtext.innerHTML= 'Better luck next time!';
+    authorpop.innerHTML = currentAuthor;
+    quotepop.innerHTML = currentQuote;
+    console.log(currentQuote)
+}
+
 function attachListeners(){
     
     var charBox = document.querySelectorAll('.charbox');
@@ -229,10 +222,9 @@ function attachListeners(){
             }
         })
     }
-    }
+}
     
 startGame();
-
 attachListeners();
 attachKeyboardListener();
 attachDeleteKeyboardListener()
@@ -363,22 +355,67 @@ document.addEventListener('keyup', (e)=>{
             currentID = -1;
         }
     });
-    
 
-
-    //popup
-
-    let newGame = document.querySelector('.restart');
-    newGame.addEventListener('click', ()=>{
+//popup
+let newGame = document.querySelector('.restart');
+newGame.addEventListener('click', ()=>{
         location.reload();
-    })
+})
 
-    let news = document.querySelector('.new');
+let news = document.querySelector('.new');
     news.addEventListener('click', ()=>{
-        location.reload();
-    })
+    location.reload();
+})
 
-    let cancelPopup = document.querySelector('.cancel');
-    cancelPopup.addEventListener('click', ()=>{
+let cancelPopup = document.querySelector('.cancel');
+   cancelPopup.addEventListener('click', ()=>{
         document.querySelector('.popup').style.display = 'none';
-    })
+})
+
+//hint section
+    var hint = document.querySelector('.hint');
+    hint.addEventListener('click', ()=>{
+        if(hints > 0){
+            var answer = confirm("You have " + hints +" hints left. Do you want to use one to reveal a letter from the puzzle?");
+            if(answer){
+                hints-=1;
+                
+                var random = selectRandomForHint();
+
+                console.log(hints, random, hintedIndices);
+                console.log(playingQuote, currentCharQuote);
+                updateplayingQ(random, currentCharQuote[random]);
+                updateBoxes();
+                attachListeners();
+                clearAllBoxHighlights();
+            }
+        }
+        else{
+            var answer = confirm("You have no more hints available. Give up?");
+            if(answer){
+                showWinPopup2();
+            }
+        }
+        
+})
+
+
+function selectRandomForHint(){
+        var random = Math.floor(Math.random() * (currentCharQuote.length -1));
+        var exceptions = [' ', ',','.',';',':','’','\''];
+
+        while(exceptions.includes(currentCharQuote[random]) || hintedIndices.includes(random)){
+            random = Math.floor(Math.random() * (currentCharQuote.length - 1));
+        }
+        hintedIndices.push(random);
+
+        let cry = encryptChar(currentCharQuote[random]);
+
+        for(var i = 0;i<currentCharQuote.length;i++){
+            if(encryptChar(currentCharQuote[i]) == cry){
+                hintedIndices.push(i);
+            }
+        }
+
+        return random;
+}

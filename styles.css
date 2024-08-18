@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 .main-container {
   width: 100%;
@@ -544,6 +545,57 @@ body {
     padding: 2rem 1rem;
     font-weight: 100;
     text-align: justify;
+  }
+}
+
+@media screen and (max-height: 880px) {
+  .popup {
+    display: none;
+    width: 70%;
+    height: 65%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .popup h1,
+  .popup h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .popup h3 {
+    font-size: 1.2rem;
+  }
+
+  .popup p {
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+
+  .popAuth {
+    font-family: monospace;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+  }
+  .popQuote {
+    width: 90%;
+    padding: 2rem 1rem;
+    font-weight: 100;
+    text-align: justify;
+  }
+  .keyboard-container {
+    flex: 0.8;
   }
 }
 

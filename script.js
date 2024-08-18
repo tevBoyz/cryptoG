@@ -1,73 +1,98 @@
 var quotes = {
-    "Franklin D. Roosevelt": "The only thing we have to fear is fear itself.",
-    "Mahatma Gandhi": "Be the change that you wish to see in the world.",
-    "Peter Drucker": "The best way to predict the future is to create it.",
+    "Heraclitus": "The only constant is change.",
+    "William Shakespeare": "To be or not to be.",
     "René Descartes": "I think, therefore I am.",
-    "George Eliot": "It is never too late to be what you might have been.",
-    "Albert Einstein": "Imagination is more important than knowledge.",
-    "Oscar Wilde": "Be yourself; everyone else is already taken.",
-    "Mark Twain": "The secret of getting ahead is getting started.",
-    "Nelson Mandela": "It always seems impossible until it’s done.",
-    "Friedrich Nietzsche": "He who has a why to live can bear almost any how.",
-    "Confucius": "It does not matter how slowly you go as long as you do not stop.",
-    "Eleanor Roosevelt": "No one can make you feel inferior without your consent.",
-    "Buddha": "The mind is everything. What you think you become.",
-    "Benjamin Franklin": "An investment in knowledge pays the best interest.",
-    "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
-    "C.S. Lewis": "You are never too old to set another goal or to dream a new dream.",
-    "Isaac Newton": "If I have seen further it is by standing on the shoulders of giants.",
-    "Vince Lombardi": "The only place where success comes before work is in the dictionary.",
-    "Henry Ford": "Whether you think you can or you think you can’t, you’re right.",
-    "Walt Disney": "The way to get started is to quit talking and begin doing.",
-    "John Lennon": "Life is what happens when you're busy making other plans.",
-    "Henry David Thoreau": "The price of anything is the amount of life you exchange for it.",
-    "Jane Austen": "There is no charm equal to tenderness of heart.",
-    "Theodore Roosevelt": "Do what you can, with what you have, where you are.",
-    "Marcus Aurelius": "The happiness of your life depends upon the quality of your thoughts.",
-    "Oprah Winfrey": "The biggest adventure you can take is to live the life of your dreams.",
-    "George Washington": "It is better to be alone than in bad company.",
-    "Thomas Jefferson": "Honesty is the first chapter in the book of wisdom.",
-    "Vincent Van Gogh": "I dream my painting and I paint my dream.",
-    "Ayn Rand": "The question isn't who is going to let me; it's who is going to stop me.",
-    "Immanuel Kant": "Science is organized knowledge. Wisdom is organized life.",
-    "Stephen Hawking": "Intelligence is the ability to adapt to change.",
-    "Leonardo da Vinci": "Learning never exhausts the mind.",
-    "Socrates": "The only true wisdom is in knowing you know nothing.",
-    "Abraham Lincoln": "Whatever you are, be a good one.",
-    "Martin Luther King Jr.": "The time is always right to do what is right.",
-    "Eleanor Roosevelt": "Do one thing every day that scares you.",
-    "Helen Keller": "Alone we can do so little; together we can do so much.",
-    "Steve Jobs": "Innovation distinguishes between a leader and a follower.",
-    "Ernest Hemingway": "Courage is grace under pressure.",
-    "Stephen King": "Get busy living or get busy dying.",
-    "Socrates": "An unexamined life is not worth living.",
-    "George Orwell": "In a time of deceit telling the truth is a revolutionary act.",
-    "Friedrich Nietzsche": "That which does not kill us makes us stronger.",
-    "Thomas Jefferson": "I cannot live without books.",
-    "Confucius": "Wherever you go, go with all your heart.",
-    "Winston Churchill": "If you're going through hell, keep going.",
-    "Lao Tzu": "The journey of a thousand miles begins with one step.",
-    "Albert Einstein": "Imagination is more important than knowledge.",
-    "Mahatma Gandhi": "Be the change you wish to see in the world.",
-    "Walt Disney": "If you can dream it, you can do it.",
-    "Oscar Wilde": "Be yourself; everyone else is already taken.",
-    "Abraham Lincoln": "Whatever you are, be a good one.",
-    "Helen Keller": "Life is either a daring adventure or nothing.",
+    "Francis Bacon": "Knowledge is power.",
     "Socrates": "The unexamined life is not worth living.",
-    "Confucius": "It does not matter how slowly you go, as long as you do not stop.",
-    "Yoda": "Do, or do not. There is no try.",
-    "Ralph Waldo Emerson": "The only way to have a friend is to be one.",
-    "Benjamin Franklin": "Well done is better than well said.",
-    "Maya Angelou": "Try to be a rainbow in someone's cloud.",
-    "Dr. Seuss": "Don't cry because it's over, smile because it happened.",
-    "Mark Twain": "The secret of getting ahead is getting started.",
-    "Mother Teresa": "Spread love everywhere you go.",
-    "William Shakespeare": "Brevity is the soul of wit.",
-    "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
-    "John Lennon": "Life is what happens when you're busy making other plans.",
+    "Alexander Pope": "To err is human; to forgive, divine.",
+    "Julius Caesar": "I came, I saw, I conquered.",
+    "Albert Einstein": "In the middle of difficulty lies opportunity.",
     "Friedrich Nietzsche": "That which does not kill us makes us stronger.",
-    "Buddha": "Peace comes from within. Do not seek it without."
+    "Virgil": "Fortune favors the brave.",
+    "Benjamin Franklin": "Time is money.",
+    "Ludwig Mies van der Rohe": "Less is more.",
+    "Unknown": "Actions speak louder than words.",
+    "Lord Acton": "Power corrupts; absolute power corrupts absolutely.",
+    "Mahatma Gandhi": "Where there is love there is life.",
+    "Aristotle": "Happiness depends upon ourselves.",
+    "Virgil": "The greatest wealth is health.",
+    "Geoffrey Chaucer": "Time and tide wait for no man.",
+    "David Viscott": "To love and be loved is to feel the sun.",
+    "Socrates": "Wisdom begins in wonder.",
+    "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
+    "Thomas Jefferson": "All men are created equal.",
+    "Patrick Henry": "Give me liberty or give me death.",
+    "French Revolution Slogan": "Liberty, equality, fraternity.",
+    "Marie Antoinette": "Let them eat cake.",
+    "Aristotle": "A friend to all is a friend to none.",
+    "William Shakespeare": "Brevity is the soul of wit.",
+    "Pablo Picasso": "Good artists copy, great artists steal.",
+    "Marshall McLuhan": "The medium is the message.",
+    "Niccolò Machiavelli": "The end justifies the means.",
+    "Edward Bulwer-Lytton": "The pen is mightier than the sword.",
+    "Joseph Addison": "He who hesitates is lost.",
+    "William Shakespeare": "To thine own self be true.",
+    "Hippocrates": "Life is short, art long.",
+    "The Beatles": "Let it be.",
+    "Franklin D. Roosevelt": "The only thing we have to fear is fear itself.",
+    "Martin Luther King Jr.": "I have a dream.",
+    "Mahatma Gandhi": "An eye for an eye makes the world blind.",
+    "Horace": "Seize the day.",
+    "Lao Tzu": "A journey of a thousand miles begins with a step.",
+    "Bhagavad Gita": "I am become death.",
+    "Socrates": "Know thyself.",
+    "Albert Einstein": "Creativity is intelligence having fun.",
+    "Aristotle": "Pleasure in the job puts perfection in the work.",
+    "Mahatma Gandhi": "Where there is love there is life.",
+    "Confucius": "Silence is a true friend who never betrays.",
+    "Benjamin Franklin": "Well done is better than well said.",
+    "Henry Ford": "Failure is simply the opportunity to begin again.",
+    "Oscar Wilde": "Be yourself; everyone else is taken.",
+    "Mark Twain": "Age is an issue of mind over matter.",
+    "Leonardo da Vinci": "Simplicity is the ultimate sophistication.",
+    "Plato": "The beginning is the most important part.",
+    "Lao Tzu": "The journey of a thousand miles begins with a step.",
+    "Winston Churchill": "Never, never, never give up.",
+    "Helen Keller": "Life is a daring adventure or nothing.",
+    "Yoda": "Do or do not. There is no try.",
+    "Abraham Lincoln": "Whatever you are, be a good one.",
+    "Socrates": "Wisdom begins in wonder.",
+    "Dalai Lama": "Be kind whenever possible. It is always possible.",
+    "Maya Angelou": "Nothing can dim the light within.",
+    "Albert Einstein": "Reality is merely an illusion.",
+    "Mother Teresa": "Spread love everywhere you go.",
+    "Buddha": "The mind is everything. What you think, you become.",
+    "Seneca": "Luck is what happens when preparation meets opportunity.",
+    "Thomas Edison": "Genius is one percent inspiration, ninety-nine percent perspiration.",
+    "Epictetus": "Wealth consists not in having great possessions.",
+    "Ralph Waldo Emerson": "The only way to have a friend is to be one.",
+    "Francis Bacon": "A wise man will make more opportunities than he finds.",
+    "Marcus Aurelius": "The best revenge is not to be like your enemy.",
+    "George Bernard Shaw": "Life isn’t about finding yourself.",
+    "Steve Jobs": "Stay hungry, stay foolish.",
+    "Mark Twain": "The best way to cheer yourself is to cheer someone else.",
+    "William Shakespeare": "Brevity is the soul of wit.",
+    "Walt Disney": "The way to get started is to quit talking.",
+    "Oscar Wilde": "Experience is the name everyone gives to their mistakes.",
+    "Vince Lombardi": "Winners never quit and quitters never win.",
+    "Helen Keller": "Alone we can do so little; together we can do so much.",
+    "Albert Einstein": "Life is like riding a bicycle.",
+    "Confucius": "It does not matter how slowly you go as long as you do not stop.",
+    "Nelson Mandela": "It always seems impossible until it’s done.",
+    "Rumi": "Let yourself be silently drawn by the pull of what you love.",
+    "Friedrich Nietzsche": "He who has a why can bear almost any how.",
+    "Epictetus": "It’s not what happens to you, but how you react.",
+    "Marcus Aurelius": "You have power over your mind, not outside events.",
+    "Plato": "Courage is knowing what not to fear.",
+    "Seneca": "Every new beginning comes from some other beginning's end.",
+    "Albert Camus": "In the depth of winter, an invincible summer.",
+    "Robert Frost": "The best way out is always through.",
+    "Henry David Thoreau": "Go confidently in the direction of your dreams.",
+    "Arthur Ashe": "Start where you are. Use what you have. Do what you can.",
+    "Lao Tzu": "He who knows, does not speak. He who speaks, does not know.",
+    "Winston Churchill": "Success is not final; failure is not fatal."
 }
+
 
 function attachKeyboardListener(){
     let allKey = document.querySelectorAll(".key");
@@ -76,7 +101,8 @@ function attachKeyboardListener(){
             if(currentID != -1){
                 var ch = event.target.id.toUpperCase();
                 updateplayingQ(currentID, ch);
-                hintedIndices.push(currentID);
+                if(playingQuote[currentID] == currentCharQuote[currentID])
+                    hintedIndices.push(currentID);
                 updateBoxes();
                 if(checkGame()){
                     // alert("You got it! \n The quote is: \n" + currentQuote + "\n Author: " + currentAuthor);
@@ -283,7 +309,7 @@ function addBox(i, c,crypto){
 
 function updateBoxes(){
     quotesContainer.innerHTML = "";
-    var exceptions = [' ', ',','.',':','’','\''];
+    var exceptions = [' ', ',','.',':',';','’','\''];
     let box;
 
     for(var i = 0; i < currentCharQuote.length; i++){
@@ -374,7 +400,8 @@ document.addEventListener('keyup', (e)=>{
         var ch = e.key.toUpperCase();
         console.log(ch,currentID);
         updateplayingQ(currentID, ch);
-        hintedIndices.push(currentID);
+        if(playingQuote[currentID] == currentCharQuote[currentID])
+            hintedIndices.push(currentID);
         updateBoxes();
         if(checkGame()){
             //alert("You got it! \n The quote is: \n" + currentQuote + "\n Author: " + currentAuthor);

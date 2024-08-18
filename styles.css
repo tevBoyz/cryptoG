@@ -605,3 +605,95 @@ body {
   color: rgb(42, 37, 102);
   font-weight: 500;
 }
+
+/* Information dialog */
+.information {
+  display: none;
+  width: 50%;
+  height: auto;
+  background: rgb(42, 37, 102);
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.information h2 {
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.information p {
+  color: #fff;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: monospace;
+  margin-top: -10px;
+  font-size: 1rem;
+  padding: 0rem 2rem;
+
+  line-height: 1rem;
+}
+
+.information .footer {
+  color: #fff;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: monospace;
+  margin-top: -10px;
+  font-size: 0.89rem;
+  text-align: center;
+}
+
+.info-icon {
+  height: 1.2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 370px) {
+  .information {
+    display: none;
+    width: 85%;
+    height: 55%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  .information {
+    display: none;
+    width: 85%;
+    height: 55%;
+    background: rgb(42, 37, 102);
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+}
+
+.active-info {
+  background: rgb(42, 37, 102);
+  color: #fff;
+}

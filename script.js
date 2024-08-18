@@ -499,3 +499,20 @@ hint.addEventListener('mouseout',()=>{
     hintIm.style.display = 'block';
     hintTio.style.display = 'none';
 })
+
+
+var infoIcon = document.querySelector(".info-icon");
+var infoPop = document.querySelector('.information');
+
+infoIcon.addEventListener('click',()=>{
+    if(infoPop.style.display == 'block')
+    {
+        infoPop.style.display = 'none'
+        infoIcon.classList.remove('active-info');
+    }
+    else{
+        infoPop.style.display = 'block';
+        infoIcon.classList.add('active-info');
+
+    }
+})
